@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>study-bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css2/style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<body>
+	<!-- 下拉菜单 -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+	<!-- nav-fixed-top:位置；navbar-inverse:外观（黑色·） -->
+		<div class="container">
+		<!-- container-fluid是自适应浏览器大小的布局 ，container是居中的固定宽度的布局-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dome-navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- 当浏览器小于某宽度会出现的小图标 -->
+				<a href="#" class="navbar-brand">现代浏览器博物馆</a>
+			</div>
+			<div class="collapse navbar-collapse" id="dome-navbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">综述</a></li>
+					<li><a href="#">简述</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">特点
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#home" >Chrome</a></li>
+							<li><a href="#profile" >Firefox</a></li>
+							<li><a href="#messages" >Opera</a></li>
+							<li><a href="#settings" >Safari</a></li>
+						</ul>
+					</li>
+					<li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- 滚动图片广告 -->
+	<div id="carousel-example-generic" class="carousel slide" datd-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example=generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example=generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example=generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example=generic" data-slide-to="3"></li>
+			<li data-target="#carousel-example=generic" data-slide-to="4"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="images/aaaaa.gif" alt="hhd">
+				<div class="carousel-caption"><p style="font-size:35px;padding:30px;text-shadow:0px 5px 5px black">Hello!My name is hhd</p></div>
+			</div>
+			<div class="item">
+				<img src="images/bbbbb.gif" alt="hhd">
+				<div class="carousel-caption"><p style="font-size:35px;padding:30px;text-shadow:0px 5px 5px black">Hello!My name is hhd</p></div>
+			</div>
+			<div class="item">
+				<img src="images/e.gif" alt="hhd">
+				<div class="carousel-caption"><p style="font-size:35px;padding:30px;text-shadow:0px 5px 5px black">Hello!My name is hhd</p></div>
+			</div>
+			<div class="item">
+				<img src="images/xmad.gif" alt="hhd">
+				<div class="carousel-caption"><p style="font-size:35px;padding:30px;text-shadow:0px 5px 5px black">Hello!My name is hhd</p></div>
+			</div>
+			<div class="item">
+				<img src="images/xxxx.gif" alt="hhd">
+				<div class="carousel-caption"><p style="font-size:35px;padding:30px;text-shadow:0px 5px 5px black">Hello!My name is hhd</p></div>
+			</div>
+		</div>
+		<a href="#carousel-example-generic" role="button" data-slide="prev" class="left carousel-control">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only"></span>
+		</a>
+		<a href="#carousel-example-generic" role="button" data-slide="next" class="right carousel-control">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+	</div>
+	<!-- 栅格布局 -->
+	<div class="container centerhh">
+		<div class="row">
+			<div class=col-md-4>
+				<img src="images/ejyx1.gif">
+				<h4>耳机</h4>
+				<p>超级超级超级好用的耳机哦！</p>
+				<p>走过路过不要错过</p>
+			</div>
+			<div class=col-md-4>
+				<img src="images/ejyx2.gif">
+				<h4>耳机</h4>
+				<p>超级超级超级好用的耳机哦！</p>
+				<p>走过路过不要错过</p>
+			</div>
+			<div class=col-md-4>
+				<img src="images/ejyx3.gif">
+				<h4>耳机</h4>
+				<p>超级超级超级好用的耳机哦！</p>
+				<p>走过路过不要错过</p>
+			</div>
+		</div>
+		<hr style="margin:30px 0px">
+		<!-- 标签页 -->
+		<ul class="nav nav-tabs" role="tablist" id="tab-list">
+			<li class="active"><a href="#home"  role="tab" data-toggle="tab">木桶理论</a></li>
+			<li><a href="#profile"  role="tab" data-toggle="tab">木桶理论</a></li>
+			<li><a href="#messages"  role="tab" data-toggle="tab">木桶理论</a></li>
+			<li><a href="#settings"  role="tab" data-toggle="tab">木桶理论</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="home">
+				<h3>木桶理论</h3>
+				<p>所谓“木桶理论”也即“木桶定律”，其核心内容为：一只木桶盛水的多少，并不取决于桶壁上最高的那块木块，而恰恰取决于桶壁上最短的那块。</p>
+				<p>。根据这一核心内容，“木桶理论”还有两个推论：其一，只有桶壁上的所有木板都足够高，那木桶才能盛满水。</p>
+				<p>其二，只要这个木桶里有一块不够高度，木桶里的水就不可能是满的。 </p>
+				<p>在一个团队里，决定这个团队战斗力强弱的不是那个能力最强、表现最好的人，而恰恰是那个能力最弱、表现最差的落后者。</p>
+			</div>
+			<div class="tab-pane" id="profile">
+				<h3>木桶理论</h3>
+				<p>所谓“木桶理论”也即“木桶定律”，其核心内容为：一只木桶盛水的多少，并不取决于桶壁上最高的那块木块，而恰恰取决于桶壁上最短的那块。</p>
+				<p>。根据这一核心内容，“木桶理论”还有两个推论：其一，只有桶壁上的所有木板都足够高，那木桶才能盛满水。</p>
+				<p>其二，只要这个木桶里有一块不够高度，木桶里的水就不可能是满的。 </p>
+				<p>在一个团队里，决定这个团队战斗力强弱的不是那个能力最强、表现最好的人，而恰恰是那个能力最弱、表现最差的落后者。</p>
+			</div>
+			<div class="tab-pane" id="messages">
+				<h3>木桶理论</h3>
+				<p>所谓“木桶理论”也即“木桶定律”，其核心内容为：一只木桶盛水的多少，并不取决于桶壁上最高的那块木块，而恰恰取决于桶壁上最短的那块。</p>
+				<p>。根据这一核心内容，“木桶理论”还有两个推论：其一，只有桶壁上的所有木板都足够高，那木桶才能盛满水。</p>
+				<p>其二，只要这个木桶里有一块不够高度，木桶里的水就不可能是满的。 </p>
+				<p>在一个团队里，决定这个团队战斗力强弱的不是那个能力最强、表现最好的人，而恰恰是那个能力最弱、表现最差的落后者。</p>
+			</div>
+			<div class="tab-pane" id="settings">
+				<h3>木桶理论</h3>
+				<p>所谓“木桶理论”也即“木桶定律”，其核心内容为：一只木桶盛水的多少，并不取决于桶壁上最高的那块木块，而恰恰取决于桶壁上最短的那块。</p>
+				<p>。根据这一核心内容，“木桶理论”还有两个推论：其一，只有桶壁上的所有木板都足够高，那木桶才能盛满水。</p>
+				<p>其二，只要这个木桶里有一块不够高度，木桶里的水就不可能是满的。 </p>
+				<p>在一个团队里，决定这个团队战斗力强弱的不是那个能力最强、表现最好的人，而恰恰是那个能力最弱、表现最差的落后者。</p>
+			</div>
+		</div>
+		<hr style="margin:30px 0px">
+		
+	</div>
+	<footer style="margin-bottom:60px;">
+		<p class="pull-right"style="display:block;margin-right:200px"><a href="#top" style="text-decoration: none;coloe:#ccc"> 回到顶部</a></p>
+		<p style="display:block;margin-left:200px">@2017 hhh</p>
+	</footer>
+	<!-- 弹出框 -->
+	<div class="modal fade" id="about">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+						<!-- <h3 class="modal-title">关于</h3> -->
+					</button>
+				</div>
+				<div class="modal-body">
+					<h5>你好，欢迎来到...，这里是,,,</h5>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">了解</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="js2/script.js">Next</script>
+	<script>
+		$(document).ready(function(){
+			$('#dome-navbar .dropdown-menu a').click(function(){
+				var href=$(this).attr("href");
+
+				$("#tab-list a[href='"+href+"']").tab("show");
+			})
+		})
+	</script>
+</body>
+</html>
